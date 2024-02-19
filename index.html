@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Matias Ballesteros</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/Matias Ballesteros/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        
+                            <li><a href="#sobremi" class="seleccionado2" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#habilidades" class="seleccionado2" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" class="seleccionado3" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto"class="seleccionado4" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#contacto"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2 class="mati">Soy <span>Matias Ballesteros</span>,Desarrollador Web</h2>
+                
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Mati-cv.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Matias Ballesteros</span> </h2> 
+            <h3>Desarrollador Web</h3>
+            <p> Soy un apasionado desarrollador web con 3 años de experiencia y formación continua.  Mi enfoque principal es la creación de sitios web atractivos y funcionales
+                utilizando HTML, CSS, JavaScript con React. Además, cuento con una base sólida en
+                psicología, respaldada por años de estudio, y una carrera completa en musicoterapia
+                en la Universidad de Buenos Aires, lo que me permite aportar habilidades en la
+                comunicación y en el manejo de grupos.  
+</p>
+            <p>A continuación, presione el botón para descargar mi Cv con la formación academica y experiencia Laboral.</p>
+            <a href="Cv-Matias-Ballesteros.pdf" download="CV-Mati.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <section id="habilidades">
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">100%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Worpress</p>
+                <span class="porcentaje">100%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>React</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="react"></div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                <a href="http://carmelablanco.com/" target="_blank"><img src="img/proyecto1.jpg" alt=""></a>
+            </div>
+                <div class="info">
+                    <h4>Carmela Blanco</h4>
+                    <p>Diseñada en Worpress.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <a href="https://pesonetoazul.github.io/pesoneto/index.html" target="_blank"><img src="img/proyecto2.jpg" alt=""></a>
+                
+            </div>
+                <div class="info">
+                    <h4>Peso neto</h4>
+                    <p>Html,Css y Js</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+   
+
+    <!-- SECCION FOOTER -->
+    <footer id="contacto">
+        <p class="mail"><a href="">matias.fballesteros@gmail.com</a></p>
+        <div class="redes">
+            
+            <a href="https://api.whatsapp.com/send?phone=541139116982&text=Hola soy matias ballesteros en que te puedo ayudar?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/matias-ballesteros-8313ba26b/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+           
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
